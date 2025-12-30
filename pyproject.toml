@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "schedule-shift-mcp"
 version = "0.1.0"
 description = "Education schedule shift MCP server over Streamable HTTP"
-requires-python = ">=3.9"
+requires-python = ">=3.10,<4.0"
 dependencies = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.34.0",
