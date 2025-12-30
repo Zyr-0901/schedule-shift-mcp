@@ -1,0 +1,68 @@
+{
+  "courses": [
+    {
+      "course_key": "COURSE_001",
+      "student_name": "张三",
+      "phone_last4": "9706",
+      "content": "数学提高班",
+      "teacher": "李老师"
+    },
+    {
+      "course_key": "COURSE_002",
+      "student_name": "李四",
+      "phone_last4": "1234",
+      "content": "英语口语班",
+      "teacher": "王老师"
+    }
+  ],
+  "slots": [
+    {
+      "slot_id": "SLOT_2025_01",
+      "time": "2025-01-10 19:00",
+      "teacher": "李老师",
+      "content": "数学提高班",
+      "capacity": 5,
+      "booked": 5,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2025_02",
+      "time": "2025-01-11 19:00",
+      "teacher": "李老师",
+      "content": "数学提高班",
+      "capacity": 5,
+      "booked": 2,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2025_03",
+      "time": "2025-01-12 19:30",
+      "teacher": "李老师",
+      "content": "数学提高班",
+      "capacity": 4,
+      "booked": 1,
+      "location": "教学楼 A-102"
+    },
+    {
+      "slot_id": "SLOT_2025_04",
+      "time": "2025-01-13 19:00",
+      "teacher": "王老师",
+      "content": "英语口语班",
+      "capacity": 6,
+      "booked": 6,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2025_05",
+      "time": "2025-01-14 19:00",
+      "teacher": "王老师",
+      "content": "英语口语班",
+      "capacity": 6,
+      "booked": 3,
+      "location": "教学楼 B-201"
+    }
+  ],
+  "requests": []
+}
+
+
