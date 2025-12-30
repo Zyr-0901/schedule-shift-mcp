@@ -21,18 +21,41 @@ app = FastAPI(
 
 # 挂载 MCP 服务器到 /mcp/ 路径
 # FastMCP 的 http_app() 返回 ASGI 应用
-# app.mount("/mcp", mcp.http_app())
-mcp_app = mcp.http_app()
+# 注意：FastMCP 的 http_app() 不包含 FastAPI 的文档端点（/docs, /openapi.json）
+# 文档端点应访问主应用的 /docs 和 /openapi.json，而不是 /mcp/docs
 
-# 同时兼容 /mcp 和 /mcp/
-app.mount("/mcp", mcp_app)
-app.mount("/mcp/", mcp_app)
+# 获取 FastMCP 的 HTTP 应用
+# http_app() 返回一个 ASGI 应用，可以直接挂载到 FastAPI
+mcp_app = mcp.http_app()
+app = FastAPI(lifespan=mcp_app.lifespan)
+
+# 挂载到 /mcp 路径（FastAPI 会自动处理 /mcp 和 /mcp/）
+# 使用 name=None 避免路径冲突
+app.mount("/", mcp_app)
+# app.mount("/mcp", mcp_app)
+# app.mount("/mcp/", mcp_app)
+
+# @app.on_event("startup")
+# async def _print_routes():
+#     print("=== FastAPI routes ===")
+#     for r in app.router.routes:
+#         path = getattr(r, "path", None)
+#         name = getattr(r, "name", None)
+#         methods = getattr(r, "methods", None)
+#         print(path, name, methods)
 
 
 @app.get("/health")
 async def health_check():
     """健康检查端点"""
     return JSONResponse({"status": "OK"})
+
+
+# 注意：FastAPI 自动生成的文档端点：
+# - /docs - Swagger UI 文档
+# - /openapi.json - OpenAPI JSON Schema
+# - /redoc - ReDoc 文档
+# 这些端点在主应用根路径下，不在 /mcp/ 路径下
 
 
 # ========== 标准 REST API 端点（符合图片规范）==========

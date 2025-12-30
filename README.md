@@ -19,9 +19,39 @@
 
 ### 3) 运行方式
 
-* 启动命令（示例）：`uvicorn app:app --host 0.0.0.0 --port 8000`
+#### 方式 1：FastAPI + MCP 挂载（推荐，支持 REST API 和 MCP）
+
+```bash
+uvicorn app:app --host 0.0.0.0 --port 8000
+```
+
+**端点**：
 * MCP endpoint：`http://localhost:8000/mcp/`
 * 健康检查：`GET http://localhost:8000/health`
+* REST API：`/api/query-available-slots`, `/api/submit-schedule-change`
+* API 文档：
+  - Swagger UI：`http://localhost:8000/docs`
+  - OpenAPI JSON：`http://localhost:8000/openapi.json`
+  - ReDoc：`http://localhost:8000/redoc`
+
+#### 方式 2：独立 MCP 服务器（仅 MCP 协议）
+
+如果方式 1 无法正常工作，可以尝试独立运行 MCP 服务器：
+
+```bash
+python run_mcp_server.py
+```
+
+**端点**：
+* MCP endpoint：`http://localhost:8000/mcp/`
+
+> **注意**：
+> - FastAPI 的文档端点（`/docs`, `/openapi.json`）在主应用根路径下，**不在** `/mcp/` 路径下
+> - FastMCP 的 `http_app()` 返回的 ASGI 应用只处理 MCP 协议请求，不包含 FastAPI 的文档功能
+> - 如果 MCP 客户端无法连接，请检查：
+>   1. 服务器是否正常启动
+>   2. MCP 端点 URL 是否正确（`http://localhost:8000/mcp` 或 `http://localhost:8000/mcp/`）
+>   3. 运行诊断脚本：`python diagnose_mcp.py`
 
 ### 4) 数据存储（最简可跑通）
 
