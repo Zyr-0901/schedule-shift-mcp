@@ -21,7 +21,12 @@ app = FastAPI(
 
 # 挂载 MCP 服务器到 /mcp/ 路径
 # FastMCP 的 http_app() 返回 ASGI 应用
-app.mount("/mcp", mcp.http_app())
+# app.mount("/mcp", mcp.http_app())
+mcp_app = mcp.http_app()
+
+# 同时兼容 /mcp 和 /mcp/
+app.mount("/mcp", mcp_app)
+app.mount("/mcp/", mcp_app)
 
 
 @app.get("/health")
