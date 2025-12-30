@@ -1,7 +1,8 @@
 import json
 from datetime import datetime
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Annotated
 from fastmcp import FastMCP
+from pydantic import Field
 from storage import (
     find_course_by_key,
     find_course_by_student_name,
@@ -154,9 +155,9 @@ def query_available_slots_impl(
 # MCP 工具版本，调用普通函数
 @mcp.tool()
 def query_available_slots(
-    course_name: str,
-    original_date: str,
-    target_date: str,
+    course_name: Annotated[str, Field(description="课程名称，例如'数学提高班'、'英语口语班'等")],
+    original_date: Annotated[str, Field(description="原上课日期，格式为 YYYY-MM-DD，例如'2025-01-10'")],
+    target_date: Annotated[str, Field(description="目标调班日期，格式为 YYYY-MM-DD，例如'2025-01-11'")],
 ) -> Dict[str, Any]:
     """
     查询可约档期（按日期）。若目标日期不可约，返回替代方案。
@@ -236,8 +237,8 @@ def submit_schedule_change_impl(
 # MCP 工具版本，调用普通函数
 @mcp.tool()
 def submit_schedule_change(
-    student_name: str,
-    target_date: str,
+    student_name: Annotated[str, Field(description="学生姓名，用于匹配对应的课程和档期")],
+    target_date: Annotated[str, Field(description="目标调班日期，格式为 YYYY-MM-DD，例如'2025-01-11'")],
 ) -> Dict[str, Any]:
     """
     提交调班申请（按学生姓名、目标日期）。取消手机号核验，改用学生姓名。
