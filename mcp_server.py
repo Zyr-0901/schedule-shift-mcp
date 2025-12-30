@@ -61,8 +61,8 @@ def _calculate_match_score(
     return (score, time)
 
 
-@mcp.tool()
-def query_available_slots(
+# 普通函数版本，可以被 app.py 直接调用
+def query_available_slots_impl(
     course_name: str,
     original_date: str,
     target_date: str,
@@ -151,8 +151,22 @@ def query_available_slots(
     }
 
 
+# MCP 工具版本，调用普通函数
 @mcp.tool()
-def submit_schedule_change(
+def query_available_slots(
+    course_name: str,
+    original_date: str,
+    target_date: str,
+) -> Dict[str, Any]:
+    """
+    查询可约档期（按日期）。若目标日期不可约，返回替代方案。
+    输入简化为：课程名称 + 原日期 + 目标日期。
+    """
+    return query_available_slots_impl(course_name, original_date, target_date)
+
+
+# 普通函数版本，可以被 app.py 直接调用
+def submit_schedule_change_impl(
     student_name: str,
     target_date: str,
 ) -> Dict[str, Any]:
@@ -217,4 +231,16 @@ def submit_schedule_change(
             "location": target_slot.get("location", ""),
         },
     }
+
+
+# MCP 工具版本，调用普通函数
+@mcp.tool()
+def submit_schedule_change(
+    student_name: str,
+    target_date: str,
+) -> Dict[str, Any]:
+    """
+    提交调班申请（按学生姓名、目标日期）。取消手机号核验，改用学生姓名。
+    """
+    return submit_schedule_change_impl(student_name, target_date)
 
