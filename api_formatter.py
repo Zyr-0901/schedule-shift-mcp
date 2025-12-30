@@ -4,11 +4,10 @@ from typing import Any, Dict, List
 
 
 def format_query_result_to_card(data: Dict[str, Any]) -> Dict[str, Any]:
-    """将 query_available_slots 的结果转换为卡片格式"""
+    """将 query_available_slots 的结果转换为卡片格式（按日期查询）"""
     requested = data.get("requested", {})
     alternatives = data.get("alternatives", [])
-    
-    # 构建表格
+
     alternatives_table = ""
     if alternatives:
         alternatives_table = "| 档期ID | 时间 | 老师 | 内容 | 剩余容量 | 地点 | 匹配度 |\n"
@@ -24,13 +23,13 @@ def format_query_result_to_card(data: Dict[str, Any]) -> Dict[str, Any]:
                 match_desc = "同老师"
             else:
                 match_desc = "其他"
-            
+
             alternatives_table += f"| {alt.get('slot_id', '')} | {alt.get('time', '')} | {alt.get('teacher', '')} | {alt.get('content', '')} | {alt.get('capacity_left', 0)} | {alt.get('location', '')} | {match_desc} |\n"
-    
+
     requested_status = "✅ 可约" if requested.get("is_available", False) else f"❌ 不可约（{requested.get('reason', '')}）"
     markdown_content = f"""## 档期查询结果
 
-**目标时间**: {requested.get('requested_time', '')}
+**目标日期**: {requested.get('requested_date', '')}
 **状态**: {requested_status}
 
 {alternatives_table if alternatives_table else "暂无替代方案"}
@@ -40,7 +39,7 @@ def format_query_result_to_card(data: Dict[str, Any]) -> Dict[str, Any]:
 - 原因: {requested.get('reason', '')}
 - 替代方案数量: {len(alternatives)}
 """
-    
+
     return {
         "type": "markdown",
         "data": [markdown_content],
@@ -49,7 +48,7 @@ def format_query_result_to_card(data: Dict[str, Any]) -> Dict[str, Any]:
         "field_headers": ["slot_id", "time", "teacher", "content", "capacity_left", "location", "match"],
         "chart_type": "",
         "dimension": "",
-        "desc": f"查询档期结果：目标时间 {requested.get('requested_time', '')} {'可约' if requested.get('is_available', False) else '不可约'}，提供 {len(alternatives)} 个替代方案",
+        "desc": f"查询档期结果：目标日期 {requested.get('requested_date', '')} {'可约' if requested.get('is_available', False) else '不可约'}，提供 {len(alternatives)} 个替代方案",
     }
 
 

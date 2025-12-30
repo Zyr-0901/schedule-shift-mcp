@@ -42,6 +42,14 @@ def find_course_by_key(course_key: str) -> Optional[Dict[str, Any]]:
     return None
 
 
+def find_course_by_student_name(student_name: str) -> Optional[Dict[str, Any]]:
+    """根据学生姓名查找课程"""
+    for c in get_courses():
+        if c.get("student_name") == student_name:
+            return c
+    return None
+
+
 def find_slot_by_id(slot_id: str) -> Optional[Dict[str, Any]]:
     for s in get_slots():
         if s.get("slot_id") == slot_id:

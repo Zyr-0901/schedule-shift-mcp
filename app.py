@@ -63,19 +63,16 @@ async def health_check():
 @app.post("/api/query-available-slots")
 async def api_query_available_slots(request: Request):
     """
-    查询可约档期 API（POST 方法，返回卡片格式）
-    符合图片规范：POST 方法，Content-Type: application/json，响应为卡片格式 JSON
+    查询可约档期（按日期）
     """
     try:
         body: Dict[str, Any] = await request.json()
         
         # 调用 MCP 工具函数
         result = query_available_slots(
-            course_key=body.get("course_key", ""),
-            original_time=body.get("original_time", ""),
-            target_time_or_range=body.get("target_time_or_range", {}),
-            require_same_teacher=body.get("require_same_teacher", True),
-            prefer_same_content=body.get("prefer_same_content", True),
+            course_name=body.get("course_name", ""),
+            original_date=body.get("original_date", ""),
+            target_date=body.get("target_date", ""),
         )
         
         # 转换为卡片格式
@@ -97,17 +94,15 @@ async def api_query_available_slots(request: Request):
 @app.post("/api/submit-schedule-change")
 async def api_submit_schedule_change(request: Request):
     """
-    提交调班申请 API（POST 方法，返回卡片格式）
-    符合图片规范：POST 方法，Content-Type: application/json，响应为卡片格式 JSON
+    提交调班申请（按学生姓名 + 目标日期）
     """
     try:
         body: Dict[str, Any] = await request.json()
         
         # 调用 MCP 工具函数
         result = submit_schedule_change(
-            course_key=body.get("course_key", ""),
-            slot_id=body.get("slot_id", ""),
-            verification=body.get("verification", {}),
+            student_name=body.get("student_name", ""),
+            target_date=body.get("target_date", ""),
         )
         
         # 转换为卡片格式
@@ -128,29 +123,18 @@ async def api_submit_schedule_change(request: Request):
 
 @app.get("/api/query-available-slots")
 async def api_query_available_slots_get(
-    course_key: str,
-    original_time: str,
-    target_time: str,
-    require_same_teacher: bool = True,
-    prefer_same_content: bool = True,
+    course_name: str,
+    original_date: str,
+    target_date: str,
 ):
     """
-    查询可约档期 API（GET 方法，返回卡片格式）
-    符合图片规范：GET 方法，响应为卡片格式 JSON
+    查询可约档期（GET，按日期）
     """
     try:
-        target_time_or_range = {
-            "type": "exact",
-            "start": target_time,
-            "end": target_time,
-        }
-        
         result = query_available_slots(
-            course_key=course_key,
-            original_time=original_time,
-            target_time_or_range=target_time_or_range,
-            require_same_teacher=require_same_teacher,
-            prefer_same_content=prefer_same_content,
+            course_name=course_name,
+            original_date=original_date,
+            target_date=target_date,
         )
         
         card_response = format_query_result_to_card(result)

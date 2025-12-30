@@ -67,24 +67,18 @@ python run_mcp_server.py
 
 ## 5) Tool 设计（严格按下面 schema）
 
-### Tool 1：query_available_slots
+### Tool 1：query_available_slots（简化入参）
 
 **name**：`query_available_slots`
-**用途**：查询目标时间是否可约；不可约时给替代档期（同老师同内容优先）
+**用途**：按日期查询目标课程是否可约；不可约时返回同课程的替代日期
 
 **Input (JSON)**
 
 ```json
 {
-  "course_key": "string",
-  "original_time": "YYYY-MM-DD HH:mm",
-  "target_time_or_range": {
-    "type": "exact|range",
-    "start": "YYYY-MM-DD HH:mm",
-    "end": "YYYY-MM-DD HH:mm"
-  },
-  "require_same_teacher": true,
-  "prefer_same_content": true
+  "course_name": "string",
+  "original_date": "YYYY-MM-DD",
+  "target_date": "YYYY-MM-DD"
 }
 ```
 
@@ -95,8 +89,8 @@ python run_mcp_server.py
   "status": "ok",
   "requested": {
     "is_available": false,
-    "reason": "FULL|NOT_FOUND|INVALID_TIME",
-    "requested_time": "YYYY-MM-DD HH:mm"
+    "reason": "FULL|NOT_FOUND|AVAILABLE",
+    "requested_date": "YYYY-MM-DD"
   },
   "alternatives": [
     {
@@ -114,28 +108,22 @@ python run_mcp_server.py
 
 **核心逻辑**
 
-* `exact`：只检查 `start` 这一个时刻
-* 满员：`requested.is_available=false` 且 `reason=FULL`
-* `alternatives` 排序：同老师同内容 > 同内容 > 最近时间
-* `alternatives` 最多返回 3 个（够用、避免太长）
+* 按课程名匹配课程/档期
+* 只看日期（同一天任意时间），满员则给同课程替代日期，返回最多 3 个，按日期临近排序
 
 ---
 
-### Tool 2：submit_schedule_change
+### Tool 2：submit_schedule_change（简化入参）
 
 **name**：`submit_schedule_change`
-**用途**：核验通过后提交调班申请（默认返回待审核，模拟 180 秒）
+**用途**：按学生姓名 + 目标日期提交调班申请（默认返回待审核 180 秒）
 
 **Input (JSON)**
 
 ```json
 {
-  "course_key": "string",
-  "slot_id": "string",
-  "verification": {
-    "type": "last4",
-    "value": "9706"
-  }
+  "student_name": "string",
+  "target_date": "YYYY-MM-DD"
 }
 ```
 
@@ -157,9 +145,9 @@ python run_mcp_server.py
 
 **核心逻辑**
 
-* 核验失败：`FAILED` + `message=VERIFICATION_MISMATCH`
-* slot 被抢/满员：`FAILED` + `message=SLOT_FULL`
-* 正常：写入 `requests[]`，默认 `PENDING_AUDIT`（eta=180），可用配置切换为直接 `SUCCESS`
+* 通过学生姓名匹配课程
+* 在目标日期匹配同课程、仍有容量的档期；否则 `FAILED + SLOT_NOT_FOUND_OR_FULL`
+* 默认 `PENDING_AUDIT`（eta=180），环境变量 `SCHEDULE_DIRECT_SUCCESS=true` 时直接 `SUCCESS`
 
 ---
 
