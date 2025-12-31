@@ -176,6 +176,16 @@ def submit_schedule_change_impl(
     """
     course = find_course_by_student_name(student_name)
     if not course:
+        # 学生不存在时也保存申请记录，便于审计和追踪
+        request_record = {
+            "student_name": student_name,
+            "slot_id": None,  # 学生不存在
+            "status": "FAILED",
+            "message": "STUDENT_NOT_FOUND",
+            "timestamp": datetime.now().isoformat(),
+        }
+        append_request(request_record)
+        
         return {
             "status": "ok",
             "result": "FAILED",
@@ -193,6 +203,16 @@ def submit_schedule_change_impl(
     target_slot = candidate_slots[0] if candidate_slots else None
 
     if not target_slot:
+        # 失败时也保存申请记录，便于审计和追踪
+        request_record = {
+            "student_name": student_name,
+            "slot_id": None,  # 没有找到可用档期
+            "status": "FAILED",
+            "message": "SLOT_NOT_FOUND_OR_FULL",
+            "timestamp": datetime.now().isoformat(),
+        }
+        append_request(request_record)
+        
         return {
             "status": "ok",
             "result": "FAILED",

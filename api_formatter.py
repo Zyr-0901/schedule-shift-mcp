@@ -57,20 +57,25 @@ def format_submit_result_to_card(data: Dict[str, Any]) -> Dict[str, Any]:
     result_status = data.get("result", "")
     message_text = data.get("message", "")
     audit_info = data.get("audit")
-    updated_schedule = data.get("updated_schedule", {})
+    updated_schedule = data.get("updated_schedule") or {}  # 如果为 None 则使用空字典
     
     status_emoji = "✅" if result_status == "SUCCESS" else "⏳" if result_status == "PENDING_AUDIT" else "❌"
+    
+    # 只在有课程安排时才显示
+    schedule_section = ""
+    if updated_schedule:
+        schedule_section = f"""
+### 更新后的课程安排
+- **时间**: {updated_schedule.get('time', '')}
+- **老师**: {updated_schedule.get('teacher', '')}
+- **地点**: {updated_schedule.get('location', '')}
+"""
     
     markdown_content = f"""## 调班申请结果
 
 **状态**: {status_emoji} {result_status}
 **消息**: {message_text}
-
-### 更新后的课程安排
-- **时间**: {updated_schedule.get('time', '')}
-- **老师**: {updated_schedule.get('teacher', '')}
-- **地点**: {updated_schedule.get('location', '')}
-
+{schedule_section}
 {f"**审核预计时间**: {audit_info.get('eta_seconds', 180)} 秒" if audit_info else ""}
 """
     
