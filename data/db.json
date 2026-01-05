@@ -4,198 +4,1971 @@
       "course_key": "COURSE_001",
       "student_name": "张三",
       "phone_last4": "9706",
-      "content": "数学提高班",
+      "content": "初中数学",
       "teacher": "李老师"
     },
     {
       "course_key": "COURSE_002",
       "student_name": "李四",
       "phone_last4": "1234",
-      "content": "英语口语班",
+      "content": "初中英语",
       "teacher": "王老师"
     },
     {
       "course_key": "COURSE_003",
       "student_name": "王五",
       "phone_last4": "5678",
-      "content": "数学提高班",
+      "content": "高中数学",
       "teacher": "李老师"
     },
     {
       "course_key": "COURSE_004",
       "student_name": "赵六",
       "phone_last4": "9012",
-      "content": "英语口语班",
+      "content": "高中英语",
       "teacher": "王老师"
     },
     {
       "course_key": "COURSE_005",
       "student_name": "孙七",
       "phone_last4": "3456",
-      "content": "物理实验班",
+      "content": "高中物理",
       "teacher": "张老师"
+    },
+    {
+      "course_key": "COURSE_006",
+      "student_name": "周八",
+      "phone_last4": "7890",
+      "content": "初中语文",
+      "teacher": "陈老师"
+    },
+    {
+      "course_key": "COURSE_007",
+      "student_name": "吴九",
+      "phone_last4": "2468",
+      "content": "高中化学",
+      "teacher": "刘老师"
+    },
+    {
+      "course_key": "COURSE_008",
+      "student_name": "郑十",
+      "phone_last4": "1357",
+      "content": "初中物理",
+      "teacher": "张老师"
+    },
+    {
+      "course_key": "COURSE_009",
+      "student_name": "钱十一",
+      "phone_last4": "3691",
+      "content": "小学数学",
+      "teacher": "李老师"
+    },
+    {
+      "course_key": "COURSE_010",
+      "student_name": "孙十二",
+      "phone_last4": "2580",
+      "content": "小学英语",
+      "teacher": "王老师"
     }
   ],
   "slots": [
     {
-      "slot_id": "SLOT_2026_01_10",
-      "time": "2026-01-10 19:00",
+      "slot_id": "SLOT_2026_01_10_MATH_MS",
+      "time": "2026-01-10 00:00",
       "teacher": "李老师",
-      "content": "数学提高班",
-      "capacity": 5,
+      "content": "初中数学",
+      "capacity": 8,
       "booked": 5,
       "location": "教学楼 A-101"
     },
     {
-      "slot_id": "SLOT_2026_01_11",
-      "time": "2026-01-11 19:00",
+      "slot_id": "SLOT_2026_01_11_MATH_MS",
+      "time": "2026-01-11 00:00",
       "teacher": "李老师",
-      "content": "数学提高班",
-      "capacity": 5,
+      "content": "初中数学",
+      "capacity": 8,
       "booked": 2,
       "location": "教学楼 A-101"
     },
     {
-      "slot_id": "SLOT_2026_01_12",
-      "time": "2026-01-12 19:30",
+      "slot_id": "SLOT_2026_01_13_MATH_MS",
+      "time": "2026-01-13 00:00",
       "teacher": "李老师",
-      "content": "数学提高班",
-      "capacity": 4,
-      "booked": 1,
-      "location": "教学楼 A-102"
-    },
-    {
-      "slot_id": "SLOT_2026_01_13",
-      "time": "2026-01-13 19:00",
-      "teacher": "李老师",
-      "content": "数学提高班",
-      "capacity": 5,
+      "content": "初中数学",
+      "capacity": 8,
       "booked": 0,
       "location": "教学楼 A-101"
     },
     {
-      "slot_id": "SLOT_2026_01_14",
-      "time": "2026-01-14 19:00",
+      "slot_id": "SLOT_2026_02_10_MATH_MS",
+      "time": "2026-02-10 00:00",
       "teacher": "李老师",
-      "content": "数学提高班",
-      "capacity": 5,
+      "content": "初中数学",
+      "capacity": 8,
       "booked": 3,
       "location": "教学楼 A-101"
     },
     {
-      "slot_id": "SLOT_2026_01_15",
-      "time": "2026-01-15 19:00",
+      "slot_id": "SLOT_2026_02_15_MATH_MS",
+      "time": "2026-02-15 00:00",
       "teacher": "李老师",
-      "content": "数学提高班",
-      "capacity": 5,
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 1,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_MATH_MS",
+      "time": "2026-02-20 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_MATH_MS",
+      "time": "2026-03-05 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 4,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_MATH_MS",
+      "time": "2026-03-12 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 2,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_MATH_MS",
+      "time": "2026-03-19 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_MATH_MS",
+      "time": "2026-04-08 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
       "booked": 5,
       "location": "教学楼 A-101"
     },
     {
-      "slot_id": "SLOT_2026_01_10_EN",
-      "time": "2026-01-10 19:00",
+      "slot_id": "SLOT_2026_04_15_MATH_MS",
+      "time": "2026-04-15 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 1,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_MATH_MS",
+      "time": "2026-04-22 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_MATH_MS",
+      "time": "2026-05-06 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 3,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_MATH_MS",
+      "time": "2026-05-13 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 2,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_MATH_MS",
+      "time": "2026-05-20 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_MATH_MS",
+      "time": "2026-06-03 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 4,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_MATH_MS",
+      "time": "2026-06-10 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 1,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_MATH_MS",
+      "time": "2026-06-17 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_MATH_MS",
+      "time": "2026-07-01 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 5,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_MATH_MS",
+      "time": "2026-07-08 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 2,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_MATH_MS",
+      "time": "2026-07-15 00:00",
+      "teacher": "李老师",
+      "content": "初中数学",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 A-101"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_EN_MS",
+      "time": "2026-01-10 00:00",
       "teacher": "王老师",
-      "content": "英语口语班",
-      "capacity": 6,
+      "content": "初中英语",
+      "capacity": 10,
       "booked": 4,
       "location": "教学楼 B-201"
     },
     {
-      "slot_id": "SLOT_2026_01_11_EN",
-      "time": "2026-01-11 19:00",
+      "slot_id": "SLOT_2026_01_11_EN_MS",
+      "time": "2026-01-11 00:00",
       "teacher": "王老师",
-      "content": "英语口语班",
-      "capacity": 6,
+      "content": "初中英语",
+      "capacity": 10,
       "booked": 6,
       "location": "教学楼 B-201"
     },
     {
-      "slot_id": "SLOT_2026_01_12_EN",
-      "time": "2026-01-12 19:00",
+      "slot_id": "SLOT_2026_01_13_EN_MS",
+      "time": "2026-01-13 00:00",
       "teacher": "王老师",
-      "content": "英语口语班",
-      "capacity": 6,
-      "booked": 2,
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 0,
       "location": "教学楼 B-201"
     },
     {
-      "slot_id": "SLOT_2026_01_13_EN",
-      "time": "2026-01-13 19:00",
+      "slot_id": "SLOT_2026_02_10_EN_MS",
+      "time": "2026-02-10 00:00",
       "teacher": "王老师",
-      "content": "英语口语班",
-      "capacity": 6,
-      "booked": 6,
-      "location": "教学楼 B-201"
-    },
-    {
-      "slot_id": "SLOT_2026_01_14_EN",
-      "time": "2026-01-14 19:00",
-      "teacher": "王老师",
-      "content": "英语口语班",
-      "capacity": 6,
+      "content": "初中英语",
+      "capacity": 10,
       "booked": 3,
       "location": "教学楼 B-201"
     },
     {
-      "slot_id": "SLOT_2026_01_15_EN",
-      "time": "2026-01-15 19:00",
+      "slot_id": "SLOT_2026_02_15_EN_MS",
+      "time": "2026-02-15 00:00",
       "teacher": "王老师",
-      "content": "英语口语班",
-      "capacity": 6,
+      "content": "初中英语",
+      "capacity": 10,
       "booked": 1,
       "location": "教学楼 B-201"
     },
     {
-      "slot_id": "SLOT_2026_01_16_PH",
-      "time": "2026-01-16 14:00",
+      "slot_id": "SLOT_2026_02_20_EN_MS",
+      "time": "2026-02-20 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_EN_MS",
+      "time": "2026-03-05 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 4,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_EN_MS",
+      "time": "2026-03-12 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 2,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_EN_MS",
+      "time": "2026-03-19 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_EN_MS",
+      "time": "2026-04-08 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 5,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_EN_MS",
+      "time": "2026-04-15 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 1,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_EN_MS",
+      "time": "2026-04-22 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_EN_MS",
+      "time": "2026-05-06 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 3,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_EN_MS",
+      "time": "2026-05-13 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 2,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_EN_MS",
+      "time": "2026-05-20 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_EN_MS",
+      "time": "2026-06-03 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 4,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_EN_MS",
+      "time": "2026-06-10 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 1,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_EN_MS",
+      "time": "2026-06-17 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_EN_MS",
+      "time": "2026-07-01 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 5,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_EN_MS",
+      "time": "2026-07-08 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 2,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_EN_MS",
+      "time": "2026-07-15 00:00",
+      "teacher": "王老师",
+      "content": "初中英语",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 B-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_MATH_HS",
+      "time": "2026-01-10 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 3,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_11_MATH_HS",
+      "time": "2026-01-11 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_MATH_HS",
+      "time": "2026-01-13 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_MATH_HS",
+      "time": "2026-02-10 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 4,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_MATH_HS",
+      "time": "2026-02-15 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 1,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_MATH_HS",
+      "time": "2026-02-20 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_MATH_HS",
+      "time": "2026-03-05 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 3,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_MATH_HS",
+      "time": "2026-03-12 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_MATH_HS",
+      "time": "2026-03-19 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_MATH_HS",
+      "time": "2026-04-08 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 4,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_MATH_HS",
+      "time": "2026-04-15 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 1,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_MATH_HS",
+      "time": "2026-04-22 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_MATH_HS",
+      "time": "2026-05-06 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 3,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_MATH_HS",
+      "time": "2026-05-13 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_MATH_HS",
+      "time": "2026-05-20 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_MATH_HS",
+      "time": "2026-06-03 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 4,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_MATH_HS",
+      "time": "2026-06-10 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 1,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_MATH_HS",
+      "time": "2026-06-17 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_MATH_HS",
+      "time": "2026-07-01 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 5,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_MATH_HS",
+      "time": "2026-07-08 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_MATH_HS",
+      "time": "2026-07-15 00:00",
+      "teacher": "李老师",
+      "content": "高中数学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "教学楼 A-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_EN_HS",
+      "time": "2026-01-10 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 4,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_01_11_EN_HS",
+      "time": "2026-01-11 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 6,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_EN_HS",
+      "time": "2026-01-13 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_EN_HS",
+      "time": "2026-02-10 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 3,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_EN_HS",
+      "time": "2026-02-15 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 1,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_EN_HS",
+      "time": "2026-02-20 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_EN_HS",
+      "time": "2026-03-05 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 4,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_EN_HS",
+      "time": "2026-03-12 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 2,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_EN_HS",
+      "time": "2026-03-19 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_EN_HS",
+      "time": "2026-04-08 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 5,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_EN_HS",
+      "time": "2026-04-15 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 1,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_EN_HS",
+      "time": "2026-04-22 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_EN_HS",
+      "time": "2026-05-06 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 3,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_EN_HS",
+      "time": "2026-05-13 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 2,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_EN_HS",
+      "time": "2026-05-20 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_EN_HS",
+      "time": "2026-06-03 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 4,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_EN_HS",
+      "time": "2026-06-10 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 1,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_EN_HS",
+      "time": "2026-06-17 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_EN_HS",
+      "time": "2026-07-01 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 5,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_EN_HS",
+      "time": "2026-07-08 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 2,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_EN_HS",
+      "time": "2026-07-15 00:00",
+      "teacher": "王老师",
+      "content": "高中英语",
+      "capacity": 8,
+      "booked": 0,
+      "location": "教学楼 B-301"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_PH_HS",
+      "time": "2026-01-10 00:00",
       "teacher": "张老师",
-      "content": "物理实验班",
+      "content": "高中物理",
       "capacity": 8,
       "booked": 2,
       "location": "实验楼 C-301"
     },
     {
-      "slot_id": "SLOT_2026_01_17_PH",
-      "time": "2026-01-17 14:00",
+      "slot_id": "SLOT_2026_01_11_PH_HS",
+      "time": "2026-01-11 00:00",
       "teacher": "张老师",
-      "content": "物理实验班",
+      "content": "高中物理",
       "capacity": 8,
-      "booked": 8,
+      "booked": 3,
       "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_PH_HS",
+      "time": "2026-01-13 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_PH_HS",
+      "time": "2026-02-10 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 4,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_PH_HS",
+      "time": "2026-02-15 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 1,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_PH_HS",
+      "time": "2026-02-20 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_PH_HS",
+      "time": "2026-03-05 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 3,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_PH_HS",
+      "time": "2026-03-12 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 2,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_PH_HS",
+      "time": "2026-03-19 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_PH_HS",
+      "time": "2026-04-08 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 4,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_PH_HS",
+      "time": "2026-04-15 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 1,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_PH_HS",
+      "time": "2026-04-22 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_PH_HS",
+      "time": "2026-05-06 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 3,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_PH_HS",
+      "time": "2026-05-13 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 2,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_PH_HS",
+      "time": "2026-05-20 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_PH_HS",
+      "time": "2026-06-03 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 4,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_PH_HS",
+      "time": "2026-06-10 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 1,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_PH_HS",
+      "time": "2026-06-17 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_PH_HS",
+      "time": "2026-07-01 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 5,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_PH_HS",
+      "time": "2026-07-08 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 2,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_PH_HS",
+      "time": "2026-07-15 00:00",
+      "teacher": "张老师",
+      "content": "高中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-301"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_CH_MS",
+      "time": "2026-01-10 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 4,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_01_11_CH_MS",
+      "time": "2026-01-11 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 6,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_CH_MS",
+      "time": "2026-01-13 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_CH_MS",
+      "time": "2026-02-10 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 3,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_CH_MS",
+      "time": "2026-02-15 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 1,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_CH_MS",
+      "time": "2026-02-20 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_CH_MS",
+      "time": "2026-03-05 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 4,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_CH_MS",
+      "time": "2026-03-12 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 2,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_CH_MS",
+      "time": "2026-03-19 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_CH_MS",
+      "time": "2026-04-08 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 5,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_CH_MS",
+      "time": "2026-04-15 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 1,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_CH_MS",
+      "time": "2026-04-22 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_CH_MS",
+      "time": "2026-05-06 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 3,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_CH_MS",
+      "time": "2026-05-13 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 2,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_CH_MS",
+      "time": "2026-05-20 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_CH_MS",
+      "time": "2026-06-03 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 4,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_CH_MS",
+      "time": "2026-06-10 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 1,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_CH_MS",
+      "time": "2026-06-17 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_CH_MS",
+      "time": "2026-07-01 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 5,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_CH_MS",
+      "time": "2026-07-08 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 2,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_CH_MS",
+      "time": "2026-07-15 00:00",
+      "teacher": "陈老师",
+      "content": "初中语文",
+      "capacity": 10,
+      "booked": 0,
+      "location": "教学楼 C-101"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_CH_HS",
+      "time": "2026-01-10 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_01_11_CH_HS",
+      "time": "2026-01-11 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 3,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_CH_HS",
+      "time": "2026-01-13 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_CH_HS",
+      "time": "2026-02-10 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 4,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_CH_HS",
+      "time": "2026-02-15 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 1,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_CH_HS",
+      "time": "2026-02-20 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_CH_HS",
+      "time": "2026-03-05 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 3,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_CH_HS",
+      "time": "2026-03-12 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_CH_HS",
+      "time": "2026-03-19 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_CH_HS",
+      "time": "2026-04-08 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 4,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_CH_HS",
+      "time": "2026-04-15 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 1,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_CH_HS",
+      "time": "2026-04-22 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_CH_HS",
+      "time": "2026-05-06 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 3,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_CH_HS",
+      "time": "2026-05-13 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_CH_HS",
+      "time": "2026-05-20 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_CH_HS",
+      "time": "2026-06-03 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 4,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_CH_HS",
+      "time": "2026-06-10 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 1,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_CH_HS",
+      "time": "2026-06-17 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_CH_HS",
+      "time": "2026-07-01 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 5,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_CH_HS",
+      "time": "2026-07-08 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 2,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_CH_HS",
+      "time": "2026-07-15 00:00",
+      "teacher": "刘老师",
+      "content": "高中化学",
+      "capacity": 6,
+      "booked": 0,
+      "location": "实验楼 C-302"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_PH_MS",
+      "time": "2026-01-10 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 3,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_11_PH_MS",
+      "time": "2026-01-11 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 2,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_PH_MS",
+      "time": "2026-01-13 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_PH_MS",
+      "time": "2026-02-10 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 4,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_PH_MS",
+      "time": "2026-02-15 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 1,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_PH_MS",
+      "time": "2026-02-20 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_PH_MS",
+      "time": "2026-03-05 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 3,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_PH_MS",
+      "time": "2026-03-12 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 2,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_PH_MS",
+      "time": "2026-03-19 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_PH_MS",
+      "time": "2026-04-08 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 4,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_PH_MS",
+      "time": "2026-04-15 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 1,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_PH_MS",
+      "time": "2026-04-22 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_PH_MS",
+      "time": "2026-05-06 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 3,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_PH_MS",
+      "time": "2026-05-13 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 2,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_PH_MS",
+      "time": "2026-05-20 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_PH_MS",
+      "time": "2026-06-03 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 4,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_PH_MS",
+      "time": "2026-06-10 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 1,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_PH_MS",
+      "time": "2026-06-17 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_PH_MS",
+      "time": "2026-07-01 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 5,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_PH_MS",
+      "time": "2026-07-08 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 2,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_PH_MS",
+      "time": "2026-07-15 00:00",
+      "teacher": "张老师",
+      "content": "初中物理",
+      "capacity": 8,
+      "booked": 0,
+      "location": "实验楼 C-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_MATH_ES",
+      "time": "2026-01-10 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 5,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_01_11_MATH_ES",
+      "time": "2026-01-11 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 7,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_MATH_ES",
+      "time": "2026-01-13 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_MATH_ES",
+      "time": "2026-02-10 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 3,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_MATH_ES",
+      "time": "2026-02-15 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 1,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_MATH_ES",
+      "time": "2026-02-20 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_MATH_ES",
+      "time": "2026-03-05 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 4,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_MATH_ES",
+      "time": "2026-03-12 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 2,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_MATH_ES",
+      "time": "2026-03-19 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_MATH_ES",
+      "time": "2026-04-08 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 5,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_MATH_ES",
+      "time": "2026-04-15 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 1,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_MATH_ES",
+      "time": "2026-04-22 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_MATH_ES",
+      "time": "2026-05-06 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 3,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_MATH_ES",
+      "time": "2026-05-13 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 2,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_MATH_ES",
+      "time": "2026-05-20 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_MATH_ES",
+      "time": "2026-06-03 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 4,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_MATH_ES",
+      "time": "2026-06-10 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 1,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_MATH_ES",
+      "time": "2026-06-17 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_MATH_ES",
+      "time": "2026-07-01 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 5,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_MATH_ES",
+      "time": "2026-07-08 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 2,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_MATH_ES",
+      "time": "2026-07-15 00:00",
+      "teacher": "李老师",
+      "content": "小学数学",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-101"
+    },
+    {
+      "slot_id": "SLOT_2026_01_10_EN_ES",
+      "time": "2026-01-10 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 4,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_11_EN_ES",
+      "time": "2026-01-11 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 6,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_01_13_EN_ES",
+      "time": "2026-01-13 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_10_EN_ES",
+      "time": "2026-02-10 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 3,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_15_EN_ES",
+      "time": "2026-02-15 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 1,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_02_20_EN_ES",
+      "time": "2026-02-20 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_05_EN_ES",
+      "time": "2026-03-05 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 4,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_12_EN_ES",
+      "time": "2026-03-12 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 2,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_03_19_EN_ES",
+      "time": "2026-03-19 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_08_EN_ES",
+      "time": "2026-04-08 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 5,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_15_EN_ES",
+      "time": "2026-04-15 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 1,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_04_22_EN_ES",
+      "time": "2026-04-22 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_06_EN_ES",
+      "time": "2026-05-06 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 3,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_13_EN_ES",
+      "time": "2026-05-13 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 2,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_05_20_EN_ES",
+      "time": "2026-05-20 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_03_EN_ES",
+      "time": "2026-06-03 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 4,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_10_EN_ES",
+      "time": "2026-06-10 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 1,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_06_17_EN_ES",
+      "time": "2026-06-17 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_01_EN_ES",
+      "time": "2026-07-01 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 5,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_08_EN_ES",
+      "time": "2026-07-08 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 2,
+      "location": "教学楼 D-201"
+    },
+    {
+      "slot_id": "SLOT_2026_07_15_EN_ES",
+      "time": "2026-07-15 00:00",
+      "teacher": "王老师",
+      "content": "小学英语",
+      "capacity": 12,
+      "booked": 0,
+      "location": "教学楼 D-201"
     }
   ],
   "requests": [
     {
       "student_name": "张三",
-      "slot_id": "SLOT_2026_01_11",
+      "slot_id": "SLOT_2026_01_11_MATH_MS",
       "status": "PENDING_AUDIT",
       "timestamp": "2026-12-30T16:26:54.218066"
-    },
-    {
-      "student_name": "张三",
-      "slot_id": "SLOT_2026_01_11",
-      "status": "PENDING_AUDIT",
-      "timestamp": "2026-12-30T17:47:16.474387"
-    },
-    {
-      "student_name": "张三",
-      "slot_id": null,
-      "status": "FAILED",
-      "message": "SLOT_NOT_FOUND_OR_FULL",
-      "timestamp": "2026-12-31T11:36:32.915356"
-    },
-    {
-      "student_name": "张三",
-      "slot_id": null,
-      "status": "FAILED",
-      "message": "SLOT_NOT_FOUND_OR_FULL",
-      "timestamp": "2026-12-31T11:37:04.993937"
-    },
-    {
-      "student_name": "张三",
-      "slot_id": "SLOT_2026_01_13",
-      "status": "PENDING_AUDIT",
-      "timestamp": "2026-12-31T11:38:38.823282"
     }
   ]
 }
